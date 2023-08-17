@@ -1,13 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Box } from "../../../common/Box/styled";
-import {
-	Header,
-	Icon,
-	Project,
-	ProjectName,
-	Projects,
-	Wrapper
-} from "./styled";
+import { Header, Icon, Wrapper } from "./styled";
 import {
 	fetchRepositories,
 	selectRepositories,
