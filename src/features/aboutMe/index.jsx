@@ -1,40 +1,22 @@
 import {
 	Container,
-	Introduction,
-	Image,
-	Header,
-	About,
-	Description,
-	Footer,
 	Main,
 	List,
-	ListItem
+	ListItem,
+	Section
 } from "./styled";
-import { Section } from "./Section";
-import { ThemeSwitch } from "../../common/ThemeSwitch";
 import { Portfolio } from "./Portfolio";
-import { Box } from "../../common/Box/styled";
+import { SectionBox } from "./SectionBox";
+import { Footer } from "./Footer";
+import { Introduction } from "./Introduction";
 
 export const AboutMe = () => {
 	return (
 		<Container>
-			<Introduction>
-				<Image src="https://i.postimg.cc/WzCSYcCZ/my-Picture.png"></Image>
-				<About>
-					<ThemeSwitch />
-					This is
-					<Header>Jakub Bartoszek</Header>
-					<Description>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Accusamus nobis optio officia illum natus. Omnis soluta
-						dignissimos numquam culpa ipsum, commodi in, illo nobis
-						harum maiores porro nesciunt vero fuga.
-					</Description>
-				</About>
-			</Introduction>
+			<Introduction/>
 			<Main>
-				<Box>
-					<Section
+				<Section>
+					<SectionBox
 						title="My skills"
 						body={
 							<List>
@@ -42,9 +24,9 @@ export const AboutMe = () => {
 							</List>
 						}
 					/>
-				</Box>
-				<Box>
-					<Section
+				</Section>
+				<Section>
+					<SectionBox
 						title="What i want to learn"
 						body={
 							<List>
@@ -52,10 +34,12 @@ export const AboutMe = () => {
 							</List>
 						}
 					/>
-				</Box>
-				<Section body={<Portfolio />} />
+				</Section>
+				<Section>
+					<Portfolio />
+				</Section>
 			</Main>
-			<Footer />
+			<Footer/>
 		</Container>
 	);
 };
