@@ -1,7 +1,9 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.footer`
+	color: ${({ theme }) => theme.colors.textPrimary};
 	width: 60%;
+	font-size: 18px;
 `;
 
 export const Email = styled.h3`
