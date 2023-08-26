@@ -1,45 +1,27 @@
-import {
-	Container,
-	Main,
-	List,
-	ListItem,
-	Section
-} from "./styled";
+import { Container, Main } from "./styled";
 import { Portfolio } from "./Portfolio";
-import { SectionBox } from "./SectionBox";
 import { Footer } from "./Footer";
 import { Introduction } from "./Introduction";
+import { Skills } from "./Skills";
+import { skills } from "./Skills/skills";
+import { nextSkills } from "./Skills/nextSkills";
 
 export const AboutMe = () => {
 	return (
 		<Container>
-			<Introduction/>
+			<Introduction />
 			<Main>
-				<Section>
-					<SectionBox
-						title="My skills"
-						body={
-							<List>
-								<ListItem>React</ListItem>
-							</List>
-						}
-					/>
-				</Section>
-				<Section>
-					<SectionBox
-						title="What i want to learn"
-						body={
-							<List>
-								<ListItem>TypeScript</ListItem>
-							</List>
-						}
-					/>
-				</Section>
-				<Section>
-					<Portfolio />
-				</Section>
+				<Skills
+					title="My skills includes 🛠️"
+					skills={skills}
+				/>
+				<Skills
+					title="What i want to learn next 🚀"
+					skills={nextSkills}
+				/>
+				<Portfolio />
 			</Main>
-			<Footer/>
+			<Footer />
 		</Container>
 	);
 };

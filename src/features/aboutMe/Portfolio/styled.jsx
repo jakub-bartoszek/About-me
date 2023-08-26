@@ -1,10 +1,11 @@
 import { styled } from "styled-components";
-import { ReactComponent as GithubIcon } from "./github.svg";
+import { ReactComponent as GithubIcon } from "../../../common/icons/github.svg";
 
 export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 120px;
 `;
 export const Icon = styled(GithubIcon)`
 	color: ${({ theme }) => theme.colors.primary};

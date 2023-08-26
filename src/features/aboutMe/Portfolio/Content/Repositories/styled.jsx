@@ -14,6 +14,7 @@ export const Repository = styled.div`
 	padding: 56px;
 	line-height: 140%;
 	letter-spacing: 0.9px;
+	border: 1px solid white;
 `;
 
 export const RepositoryName = styled.h3`

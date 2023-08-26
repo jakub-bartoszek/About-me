@@ -13,7 +13,7 @@ export const Repositories = ({ repositories }) => {
 			{repositories.map(
 				({ id, name, description, homepage, html_url }) => (
 					<Repository key={id}>
-						<RepositoryName>{name}</RepositoryName>
+						<RepositoryName>{name.toString().replaceAll('-', ' ')}</RepositoryName>
 						<Description>
 							{description}
 						</Description>
