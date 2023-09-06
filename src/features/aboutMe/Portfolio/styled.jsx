@@ -16,6 +16,3 @@ export const Header = styled.h2`
 	font-weight: 900;
 	font-size: 30px;
 `;
-export const Projects = styled.div``;
-export const Project = styled.div``;
-export const ProjectName = styled.h3``;

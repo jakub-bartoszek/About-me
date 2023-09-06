@@ -13,6 +13,14 @@ export const List = styled.ul`
 	line-height: 140%;
 	letter-spacing: 0.9px;
 	font-size: 18px;
+	@media (max-width: ${({ theme }) =>
+			theme.breakpoints.tabletHorizontalMax}px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (max-width: ${({ theme }) =>
+			theme.breakpoints.mobileMax}px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
 `;
 export const ListItem = styled.li`
 	&::marker {

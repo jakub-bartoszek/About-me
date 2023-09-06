@@ -1,7 +1,7 @@
 const colorNames = {
 	White: "#FFFFFF",
 	Mercury: "#e6e6e6",
-	SlateGray: "#6E7E91",
+	Trout: "#505B68",
 	MineShaft: "#252525",
 	CodGray: "#1C1C1C",
 	ScienceBlue: "#0366D6",
@@ -24,10 +24,10 @@ export const themeLight = {
 		textPrimary: colorNames.MineShaft,
 		site: {
 			background: colorNames.Mercury,
-			text: colorNames.SlateGray
+			text: colorNames.Trout
 		},
 		themeSwitch: {
-			background: colorNames.SlateGray,
+			background: colorNames.Trout,
 			icon: colorNames.White
 		}
 	}

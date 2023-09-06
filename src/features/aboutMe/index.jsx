@@ -5,10 +5,12 @@ import { Introduction } from "./Introduction";
 import { Skills } from "./Skills";
 import { skills } from "./Skills/skills";
 import { nextSkills } from "./Skills/nextSkills";
+import { ThemeSwitch } from "../../common/ThemeSwitch";
 
 export const AboutMe = () => {
 	return (
 		<Container>
+					<ThemeSwitch />
 			<Introduction />
 			<Main>
 				<Skills

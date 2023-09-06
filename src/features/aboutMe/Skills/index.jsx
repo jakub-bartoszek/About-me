@@ -7,7 +7,7 @@ export const Skills = ({ title, skills }) => {
 			<SubHeader>{title}</SubHeader>
 			<List>
 				{skills.map((skill) => (
-					<ListItem>{skill}</ListItem>
+					<ListItem key={skill}>{skill}</ListItem>
 				))}
 			</List>
 		</Wrapper>

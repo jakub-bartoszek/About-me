@@ -4,6 +4,15 @@ export const Wrapper = styled.footer`
 	color: ${({ theme }) => theme.colors.textPrimary};
 	width: 60%;
 	font-size: 18px;
+	@media (max-width: ${({ theme }) =>
+			theme.breakpoints.tabletHorizontalMax}px) {
+		padding: 0 15px;
+		width: 80%;
+	}
+	@media (max-width: ${({ theme }) =>
+			theme.breakpoints.mobileMax}px) {
+		width: 100%;
+	}
 `;
 
 export const Email = styled.h3`
