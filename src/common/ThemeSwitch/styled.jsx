@@ -13,11 +13,14 @@ export const Wrapper = styled.button`
 	align-items: center;
 	gap: 12px;
 	border-radius: 50px;
-	padding: 0;
-	@media (max-width: ${({ theme }) =>
-			theme.breakpoints.tabletHorizontalMax}px) {
-		right: 20px;
+	&:focus-visible {
+  outline: none;
+	outline: 2px solid ${({ theme }) => theme.colors.site.text};
+	outline-offset: 5px;
 	}
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) {
+		right: 20px;
+	};
 `;
 
 export const Text = styled.span`

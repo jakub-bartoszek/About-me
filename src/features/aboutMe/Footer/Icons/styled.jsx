@@ -8,6 +8,10 @@ export const Wrapper = styled.div`
 	margin-top: 56px;
 	display: flex;
 	gap: 24px;
+	@media (max-width: ${({ theme }) =>
+			theme.breakpoints.mobileMax}px) {
+		justify-content: center;
+	}
 `;
 
 export const Github = styled(GithubIcon)`

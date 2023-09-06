@@ -21,4 +21,8 @@ export const Email = styled.h3`
 	line-height: normal;
 	letter-spacing: 1.6px;
 	margin: 24px 0;
+	@media (max-width: ${({ theme }) =>
+			theme.breakpoints.mobileMax}px) {
+		font-size: 1.2em;
+	}
 `;

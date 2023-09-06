@@ -1,7 +1,8 @@
 const colorNames = {
 	White: "#FFFFFF",
-	Mercury: "#e6e6e6",
+	Mercury: "#E6E6E6",
 	Trout: "#505B68",
+	Tundora: "#2B2B2B",
 	MineShaft: "#252525",
 	CodGray: "#1C1C1C",
 	ScienceBlue: "#0366D6",
@@ -19,6 +20,7 @@ const common = {
 export const themeLight = {
 	...common,
 	colors: {
+		tileHoverBackground: colorNames.White,
 		tileBackground: colorNames.White,
 		primary: colorNames.ScienceBlue,
 		textPrimary: colorNames.MineShaft,
@@ -35,6 +37,7 @@ export const themeLight = {
 export const themeDark = {
 	...common,
 	colors: {
+		tileHoverBackground: colorNames.Tundora,
 		tileBackground: colorNames.MineShaft,
 		primary: colorNames.WildStrawberry,
 		textPrimary: colorNames.White,

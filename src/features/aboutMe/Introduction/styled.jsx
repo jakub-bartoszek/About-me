@@ -54,4 +54,18 @@ export const HireMeButton = styled.button`
 	border-radius: 4px;
 	border: none;
 	background: #0366d6;
+	transition: 0.3s;
+	cursor: pointer;
+	&:focus-visible {
+		outline: none;
+		scale: 1.1;
+		filter: brightness(110%);
+	}
+	&:hover {
+		scale: 1.1;
+		filter: brightness(110%);
+	}
+	&:active {
+		filter: brightness(130%);
+	}
 `;

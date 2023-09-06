@@ -14,6 +14,15 @@ export const Wrapper = styled.div`
 	}
 `;
 
+export const RepositoryName = styled.h3`
+	color: ${({ theme }) => theme.colors.textPrimary};
+	font-size: 24px;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 1.2px;
+	transition: 0.3s;
+`;
+
 export const Repository = styled.div`
 	background-color: ${({ theme }) => theme.colors.tileBackground};
 	padding: 56px;
@@ -21,14 +30,15 @@ export const Repository = styled.div`
 	letter-spacing: 0.9px;
 	border: 1px solid white;
 	word-break: break-word;
-`;
-
-export const RepositoryName = styled.h3`
-	color: ${({ theme }) => theme.colors.textPrimary};
-	font-size: 24px;
-	font-weight: 700;
-	line-height: normal;
-	letter-spacing: 1.2px;
+	border-radius: 15px;
+	transition: 0.3s;
+	&:hover {
+		background-color: ${({ theme }) =>
+			theme.colors.tileHoverBackground};
+		${RepositoryName} {
+			text-shadow: 0 0 15px #ffffff99;
+		}
+	}
 `;
 
 export const Description = styled.div`
@@ -44,4 +54,14 @@ export const Links = styled.div`
 export const Link = styled.a`
 	text-decoration: none;
 	color: ${({ theme }) => theme.colors.primary};
+	transition: 0.2s;
+	&:focus-visible {
+		outline: none;
+		filter: brightness(130%);
+		text-shadow: 0 0 15px ${({ theme }) => theme.colors.primary};
+	}
+	&:hover {
+		filter: brightness(120%);
+		text-shadow: 0 0 15px ${({ theme }) => theme.colors.primary};
+	}
 `;
