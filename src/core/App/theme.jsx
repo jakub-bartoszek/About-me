@@ -9,7 +9,8 @@ const colorNames = {
 	WildStrawberry: "#FF38A7",
 	FacebookBlue: "#1278f3",
 	LinkedinBlue: "#0a66c2",
-	Black: "#000000"
+	Black: "#000000",
+	TransparentBlack: "#00000080"
 };
 
 const common = {
@@ -17,7 +18,8 @@ const common = {
 		mobileMax: 767,
 		tabletVerticalMax: 991,
 		tabletHorizontalMax: 1199
-	}
+	},
+	iconShadow: colorNames.TransparentBlack
 };
 
 export const themeLight = {
@@ -40,7 +42,7 @@ export const themeLight = {
 		github: colorNames.Black,
 		facebook: colorNames.FacebookBlue,
 		linkedin: colorNames.LinkedinBlue,
-		instagram: colorNames.Mercury,
+		instagram: colorNames.Mercury
 	}
 };
 export const themeDark = {
@@ -63,6 +65,6 @@ export const themeDark = {
 		github: colorNames.White,
 		facebook: colorNames.FacebookBlue,
 		linkedin: colorNames.LinkedinBlue,
-		instagram: colorNames.CodGray,
+		instagram: colorNames.CodGray
 	}
 };

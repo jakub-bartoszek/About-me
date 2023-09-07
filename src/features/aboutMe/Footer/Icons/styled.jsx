@@ -21,7 +21,7 @@ export const Github = styled(GithubIcon)`
 	&:hover {
 		scale: 120%;
 		color: ${({ theme }) => theme.iconColors.github};
-		box-shadow: 0 0 20px black;
+		box-shadow: 0 0 20px ${({ theme }) => theme.iconShadow};
 	}
 `;
 export const Facebook = styled(FacebookIcon)`
@@ -32,7 +32,7 @@ export const Facebook = styled(FacebookIcon)`
 		scale: 120%;
 		color: ${({ theme }) => theme.iconColors.facebook};
 		background-color: white;
-		box-shadow: 0 0 20px black;
+		box-shadow: 0 0 20px ${({ theme }) => theme.iconShadow};
 	}
 `;
 export const Linkedin = styled(LinkedinIcon)`
@@ -43,7 +43,7 @@ export const Linkedin = styled(LinkedinIcon)`
 		scale: 120%;
 		color: ${({ theme }) => theme.iconColors.facebook};
 		background-color: white;
-		box-shadow: 0 0 20px black;
+		box-shadow: 0 0 20px ${({ theme }) => theme.iconShadow};
 	}
 `;
 
@@ -63,7 +63,7 @@ export const InstagramGradient = styled.div`
 	transition: 0.3s;
 	&:hover {
 		scale: 120%;
-		box-shadow: 0 0 20px black;
+		box-shadow: 0 0 20px ${({ theme }) => theme.iconShadow};
 	}
 `;
 export const InstagramBox = styled.div`
