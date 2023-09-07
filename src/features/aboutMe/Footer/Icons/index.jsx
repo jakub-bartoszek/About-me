@@ -3,6 +3,8 @@ import {
 	Facebook,
 	Github,
 	Instagram,
+	InstagramBox,
+	InstagramGradient,
 	Linkedin,
 	Wrapper
 } from "./styled";
@@ -21,7 +23,11 @@ export const Icons = () => (
 			<Linkedin />
 		</a>
 		<a href={`https://github.com/${githubUsername}`}>
-			<Instagram />
+			<InstagramGradient>
+				<InstagramBox>
+					<Instagram />
+				</InstagramBox>
+			</InstagramGradient>
 		</a>
 	</Wrapper>
 );

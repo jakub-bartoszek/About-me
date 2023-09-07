@@ -6,7 +6,10 @@ const colorNames = {
 	MineShaft: "#252525",
 	CodGray: "#1C1C1C",
 	ScienceBlue: "#0366D6",
-	WildStrawberry: "#FF38A7"
+	WildStrawberry: "#FF38A7",
+	FacebookBlue: "#1278f3",
+	LinkedinBlue: "#0a66c2",
+	Black: "#000000"
 };
 
 const common = {
@@ -32,6 +35,12 @@ export const themeLight = {
 			background: colorNames.Trout,
 			icon: colorNames.White
 		}
+	},
+	iconColors: {
+		github: colorNames.Black,
+		facebook: colorNames.FacebookBlue,
+		linkedin: colorNames.LinkedinBlue,
+		instagram: colorNames.Mercury,
 	}
 };
 export const themeDark = {
@@ -49,5 +58,11 @@ export const themeDark = {
 			background: colorNames.White,
 			icon: colorNames.CodGray
 		}
+	},
+	iconColors: {
+		github: colorNames.White,
+		facebook: colorNames.FacebookBlue,
+		linkedin: colorNames.LinkedinBlue,
+		instagram: colorNames.CodGray,
 	}
 };

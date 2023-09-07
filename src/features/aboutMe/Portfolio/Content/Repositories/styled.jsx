@@ -8,8 +8,7 @@ export const Wrapper = styled.div`
 	gap: 32px;
 	font-size: 18px;
 	padding: 0 10px;
-	@media (max-width: ${({ theme }) =>
-			theme.breakpoints.mobileMax}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
 		grid-template-columns: repeat(1, auto);
 	}
 `;
