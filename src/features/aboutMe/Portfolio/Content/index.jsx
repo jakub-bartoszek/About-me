@@ -1,13 +1,16 @@
+import { ErrorBox } from "./ErrorBox";
+import { Loading } from "./Loading";
 import { Repositories } from "./Repositories/index";
 
 export const Content = ({ status, repositories }) => {
+	return <ErrorBox />
 	switch (status) {
 		case "initial":
 			return null;
 		case "loading":
-			return <>loading</>;
+			return <Loading />;
 		case "error":
-			return <>error</>;
+			return <ErrorBox />;
 		case "success":
 			return <Repositories repositories={repositories} />;
 
