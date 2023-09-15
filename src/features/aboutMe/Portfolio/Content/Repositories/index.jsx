@@ -25,7 +25,7 @@ export const Repositories = ({ repositories }) => {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									{homepage.slice(0, 33)}...
+									{homepage}...
 								</Link>
 							</p>
 							<p>
@@ -35,7 +35,7 @@ export const Repositories = ({ repositories }) => {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									{html_url.slice(0, 34)}...
+									{html_url}...
 								</Link>
 							</p>
 						</Links>

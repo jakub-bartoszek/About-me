@@ -25,19 +25,16 @@ export const RepositoryName = styled.h3`
 
 export const Repository = styled.div`
 	background-color: ${({ theme }) => theme.colors.tileBackground};
-	padding: 56px;
+	padding: 48px;
 	line-height: 140%;
 	letter-spacing: 0.9px;
-	border: 1px solid white;
 	word-break: break-word;
 	border-radius: 15px;
 	transition: 0.3s;
 	&:hover {
+		box-shadow: 0 0 20px ${({ theme }) => theme.colors.primary}50;
 		background-color: ${({ theme }) =>
 			theme.colors.tileHoverBackground};
-		${RepositoryName} {
-			text-shadow: 0 0 15px #ffffff99;
-		}
 	}
 `;
 
@@ -49,6 +46,7 @@ export const Links = styled.div`
 	display: grid;
 	gap: 8px;
 	grid-template-rows: 1fr 1fr;
+	word-break: break-all;
 `;
 
 export const Link = styled.a`
@@ -57,14 +55,12 @@ export const Link = styled.a`
 	transition: 0.2s;
 	&:focus-visible {
 		outline: none;
-		filter: brightness(130%);
-		text-shadow: 0 0 15px ${({ theme }) => theme.colors.primary};
-		outline: 1px solid ${({theme}) => theme.colors.site.text};	
+		outline: 1px solid ${({ theme }) => theme.colors.site.text};
 		outline-offset: 2px;
 		border-radius: 2px;
+		text-shadow: 0 0 15px ${({ theme }) => theme.colors.primary};
 	}
 	&:hover {
-		filter: brightness(120%);
 		text-shadow: 0 0 15px ${({ theme }) => theme.colors.primary};
 	}
 `;
