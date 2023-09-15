@@ -4,7 +4,7 @@ export const Wrapper = styled.section`
 	margin: 72px 0;
 	background-color: ${({ theme }) => theme.colors.tileBackground};
 	padding: 32px;
-	transition: 0.3s;
+	transition: 0.1s;
 `;
 
 export const List = styled.ul`
