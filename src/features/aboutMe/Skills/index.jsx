@@ -1,4 +1,4 @@
-import { SubHeader } from "../SubHeader/styled";
+import { SubHeader } from "../../../common/SubHeader/styled";
 import { List, ListItem, Wrapper } from "./styled";
 
 export const Skills = ({ title, skills }) => {
