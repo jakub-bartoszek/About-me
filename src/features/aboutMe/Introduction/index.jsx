@@ -1,4 +1,5 @@
-import { About, Description, Header, HireMeButton, Image, Message, Wrapper } from "./styled";
+import { StyledButton } from "../../../common/StyledButton/styled";
+import { About, Description, Header, Image, Message, Wrapper } from "./styled";
 
 export const Introduction = () => (
 	<Wrapper>
@@ -10,7 +11,7 @@ export const Introduction = () => (
 				👨🏻‍💻 I’m a passionate Frontend Developer in love with React,
 				currently looking for new job opportunities.
 			</Description>
-			<HireMeButton><Message/>Hire me!</HireMeButton>
+			<StyledButton><Message/>Hire me!</StyledButton>
 		</About>
 	</Wrapper>
 );
