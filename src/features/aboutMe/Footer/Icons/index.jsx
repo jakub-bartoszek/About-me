@@ -13,16 +13,30 @@ export const Icons = () => (
 	<Wrapper>
 		<a
 			href={`https://www.linkedin.com/in/jakub-bartoszek-0853ba28a/`}
+			target="_blank"
+			rel="noopener noreferrer"
 		>
 			<Linkedin />
 		</a>
-		<a href={`https://github.com/${githubUsername}`}>
+		<a
+			href={`https://github.com/${githubUsername}`}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			<Github />
 		</a>
-		<a href={`https://www.facebook.com/kuba.bartoszek.507`}>
+		<a
+			href={`https://www.facebook.com/kuba.bartoszek.507`}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			<Facebook />
 		</a>
-		<a href={`https://github.com/${githubUsername}`}>
+		<a
+			href={`https://github.com/${githubUsername}`}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			<InstagramGradient>
 				<InstagramBox>
 					<Instagram />
