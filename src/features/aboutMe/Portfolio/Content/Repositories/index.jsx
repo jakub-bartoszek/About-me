@@ -13,20 +13,28 @@ export const Repositories = ({ repositories }) => {
 			{repositories.map(
 				({ id, name, description, homepage, html_url }) => (
 					<Repository key={id}>
-						<RepositoryName>{name.toString().replaceAll('-', ' ')}</RepositoryName>
-						<Description>
-							{description}
-						</Description>
+						<RepositoryName>
+							{name.toString().replaceAll("-", " ")}
+						</RepositoryName>
+						<Description>{description}</Description>
 						<Links>
 							<p>
 								Demo:&nbsp;
-								<Link href={homepage}>
+								<Link
+									href={homepage}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									{homepage.slice(0, 33)}...
 								</Link>
 							</p>
 							<p>
 								Code:&nbsp;
-								<Link href={html_url}>
+								<Link
+									href={html_url}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									{html_url.slice(0, 34)}...
 								</Link>
 							</p>
