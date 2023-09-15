@@ -8,7 +8,8 @@ export const Wrapper = styled.div`
 	gap: 32px;
 	font-size: 18px;
 	padding: 0 10px;
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+	@media (max-width: ${({ theme }) =>
+			theme.breakpoints.mobileMax}px) {
 		grid-template-columns: repeat(1, auto);
 	}
 `;
@@ -58,6 +59,9 @@ export const Link = styled.a`
 		outline: none;
 		filter: brightness(130%);
 		text-shadow: 0 0 15px ${({ theme }) => theme.colors.primary};
+		outline: 1px solid ${({theme}) => theme.colors.site.text};	
+		outline-offset: 2px;
+		border-radius: 2px;
 	}
 	&:hover {
 		filter: brightness(120%);

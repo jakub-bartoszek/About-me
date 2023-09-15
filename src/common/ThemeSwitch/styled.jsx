@@ -25,8 +25,7 @@ export const Wrapper = styled.button`
 
 export const Text = styled.span`
 	color: ${({ theme }) => theme.colors.site.text};
-	@media (max-width: ${({ theme }) =>
-			theme.breakpoints.mobileMax}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
 		display: none;
 	}
 `;
