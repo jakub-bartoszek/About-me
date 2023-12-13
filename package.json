@@ -2,7 +2,7 @@
 	"name": "about-me",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "jakub-bartoszek.github.io/About-me/",
+	"homepage": "https://jakub-bartoszek.github.io/About-me/",
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.9.5",
 		"@testing-library/jest-dom": "^5.17.0",
