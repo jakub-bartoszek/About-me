@@ -33,7 +33,6 @@ export const Icons = () => (
 			<Facebook />
 		</a>
 		<a
-			href={`https://github.com/${githubUsername}`}
 			target="_blank"
 			rel="noopener noreferrer"
 		>
