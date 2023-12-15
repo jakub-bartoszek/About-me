@@ -1,8 +1,8 @@
 export const nextSkills = [
-	"React Context",
-	"Node.js",
-	"Cypress",
-	"Unit testing",
-	"TypeScript",
-	"JS classes"
+ "React Context",
+ "Cypress",
+ "Unit testing",
+ "JS classes",
+ "SASS",
+ 
 ];

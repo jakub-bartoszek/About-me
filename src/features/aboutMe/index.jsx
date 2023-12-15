@@ -8,22 +8,21 @@ import { nextSkills } from "./Skills/nextSkills";
 import { ThemeSwitch } from "../../common/ThemeSwitch";
 
 export const AboutMe = () => {
-	return (
-		<Container>
-					<ThemeSwitch />
-			<Introduction />
-			<Main>
-				<Skills
-					title="My skills includes 🛠️"
-					skills={skills}
-				/>
-				<Skills
-					title="What i want to learn next 🚀"
-					skills={nextSkills}
-				/>
-				<Portfolio />
-			</Main>
-			<Footer />
-		</Container>
-	);
+ return (
+  <Container>
+   <Introduction />
+   <Main>
+    <Skills
+     title="My skills includes 🛠️"
+     skills={skills}
+    />
+    <Skills
+     title="What i want to learn next 🚀"
+     skills={nextSkills}
+    />
+    <Portfolio />
+   </Main>
+   <Footer />
+  </Container>
+ );
 };
