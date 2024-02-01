@@ -18,7 +18,7 @@ export const Introduction = () => (
   </ImageWrapper>
   <ThemeSwitch />
   <About>
-   <Caption> This is</Caption>
+   <Caption>This is</Caption>
    <Header>Jakub Bartoszek</Header>
    <Description>
     👨🏻‍💻 I’m a passionate and highly motivated Frontend Developer. I love working
