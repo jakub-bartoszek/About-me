@@ -13,6 +13,7 @@ export const skills = [
  "Error handling",
  "Styled components",
  "Tailwind CSS",
+ "SASS",
  "CSS BEM convention",
  "CSS Grid",
  "CSS Flexbox",

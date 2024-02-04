@@ -3,6 +3,7 @@ export const nextSkills = [
  "Cypress",
  "Unit testing",
  "JS classes",
- "SASS",
- 
+ "Vue.js",
+ "React Native",
+ "Docker"
 ];
